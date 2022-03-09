@@ -145,7 +145,7 @@ body {
 }
 
 .content__work--work-container-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@ body {
 }
 
 .content__work--work-container-image-img {
-    width: 50vw;
+    width: 40vw;
     /* padding: 0; */
     display: flex;
     justify-content: center;
@@ -168,7 +168,7 @@ body {
 
 .content__work--work-container-image-img:hover {
     box-shadow: none;
-    transform: scale(.9);
+    transform: scale(.95);
 
     /* transform: scale(1.1); */
     /* filter: brightness(1000); */
@@ -228,16 +228,44 @@ body {
 
 }
 
+.content__skills--languages-html:hover {
+    background-color: #E96228;
+}
+
+.content__skills--languages-css:hover {
+    background-color: #2965F1;
+}
+
+.content__skills--languages-js:hover {
+    background-color: #EFD81D;
+}
+
+.content__skills--frameworks-bootstrap:hover {
+    background-color: #8011F5;
+}
+
+.content__skills--vscode:hover {
+    background-color: #4CABEC;
+}
+
+.content__skills--git:hover {
+    background-color: #E84D31;
+}
+
+.content__skills--github:hover {
+    background-color: #000000;
+}
+
 .skill-logo {
 
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 .content__skills--skill:hover {
-    background: var(--primary-color);
+    /* background: var(--primary-color); */
     color: var(--background-color);
     box-shadow: none;
-    transform: scale(.9);
+    transform: scale(.95);
 
 }
 
@@ -300,7 +328,7 @@ body {
     color: var(--background-color);
     background-color: var(--primary-color);
     box-shadow: none;
-    transform: scale(.9);
+    transform: scale(.95);
 }
 
 .gmail:hover {
