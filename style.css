@@ -506,6 +506,8 @@ body {
         }
 
         .content__hero--svg-svg {
+            overflow-x: hidden;
+
             position: absolute;
             top: 20%;
             right: 0;
