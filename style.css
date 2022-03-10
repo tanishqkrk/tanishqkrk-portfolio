@@ -14,10 +14,11 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+
 }
 
 body {
-    overflow-x: hidden;
     background-color: var(--background-color);
     margin: 0;
     padding: 0;
