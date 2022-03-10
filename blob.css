@@ -1,0 +1,219 @@
+.random-blob {
+    /* transform: scale(.2); */
+    width: 2.5%;
+    position: absolute;
+    animation: breathe 1.5s infinite alternate ease-in-out;
+    z-index: -1;
+}
+
+.random-blob-1 {
+    top: 4%;
+    right: 20%;
+}
+
+.random-blob-2 {
+    top: 20%;
+    right: 80%;
+}
+
+.random-blob-3 {
+    top: 90%;
+    right: 10%;
+}
+
+.random-blob-4 {
+    top: 67%;
+    right: 70%;
+}
+
+.random-blob-5 {
+    top: 150%;
+    right: 70%;
+}
+
+.random-blob-6 {
+    bottom: 140%;
+    right: 80%;
+}
+
+.random-blob-7 {
+    top: 100%;
+    right: 90%;
+}
+
+.random-blob-8 {
+    top: 240%;
+    right: 80%;
+}
+
+.random-blob-9 {
+    top: 120%;
+    right: 89%;
+}
+
+.random-blob-10 {
+    top: 205%;
+    right: 80%;
+}
+
+.random-blob-11 {
+    top: 150%;
+    right: 20%;
+}
+
+.random-blob-12 {
+    top: 320%;
+    right: 80%;
+}
+
+.random-blob-13 {
+    top: 290%;
+    right: 10%;
+}
+
+.random-blob-14 {
+    top: 367%;
+    right: 70%;
+}
+
+.random-blob-15 {
+    top: 250%;
+    right: 70%;
+}
+
+.random-blob-16 {
+    bottom: 140%;
+    right: 80%;
+}
+
+.random-blob-17 {
+    top: 100%;
+    right: 90%;
+}
+
+.random-blob-18 {
+    top: 240%;
+    right: 80%;
+}
+
+.random-blob-19 {
+    top: 120%;
+    right: 89%;
+}
+
+.random-blob-20 {
+    top: 295%;
+    right: 70%;
+}
+
+.random-blob-21 {
+    top: 400%;
+    right: 20%;
+}
+
+.random-blob-22 {
+    top: 320%;
+    right: 20%;
+}
+
+.random-blob-23 {
+    top: 390%;
+    right: 10%;
+}
+
+.random-blob-24 {
+    top: 417%;
+    right: 20%;
+}
+
+.random-blob-25 {
+    top: 500%;
+    right: 20%;
+}
+
+.random-blob-26 {
+    bottom: 540%;
+    right: 10%;
+}
+
+.random-blob-27 {
+    top: 520%;
+    right: 90%;
+}
+
+.random-blob-28 {
+    top: 340%;
+    right: 30%;
+}
+
+.random-blob-29 {
+    top: 510%;
+    right: 40%;
+}
+
+.random-blob-30 {
+    top: 305%;
+    right: 80%;
+}
+
+.random-blob-31 {
+    top: 520%;
+    right: 20%;
+}
+
+.random-blob-32 {
+    top: 480%;
+    right: 80%;
+}
+
+.random-blob-33 {
+    top: 490%;
+    right: 10%;
+}
+
+.random-blob-34 {
+    top: 520%;
+    right: 70%;
+}
+
+.random-blob-35 {
+    top: 450%;
+    right: 70%;
+}
+
+.random-blob-36 {
+    bottom: 540%;
+    right: 80%;
+}
+
+.random-blob-37 {
+    top: 457%;
+    right: 90%;
+}
+
+.random-blob-38 {
+    top: 415%;
+    right: 50%;
+}
+
+.random-blob-39 {
+    top: 490%;
+    right: 89%;
+}
+
+.random-blob-40 {
+    top: 205%;
+    right: 30%;
+}
+
+
+@keyframes breathe {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px) rotate(5deg);
+
+    }
+}
