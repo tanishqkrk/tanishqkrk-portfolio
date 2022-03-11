@@ -143,13 +143,13 @@ body {
 
 .content__hero--svg {
     overflow-x: hidden;
-
+    overflow-y: hidden;
     width: 50vw;
 }
 
 .content__hero--svg-svg {
-    overflow-x: hidden;
-
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
     width: 80%;
     animation: rotate 20s alternate infinite;
 }
