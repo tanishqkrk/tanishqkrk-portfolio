@@ -510,9 +510,11 @@ body {
 
         .content__hero--svg {
             position: absolute;
-            width: 400px;
-            overflow-x: hidden;
-            overflow-y: hidden;
+            width: 500px;
+            /* overflow-x: hidden; */
+            /* overflow-y: hidden; */
+            top: 0;
+            right: 0;
         }
 
         .content__hero--svg-svg {
