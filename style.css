@@ -12,6 +12,8 @@
     --primary-color: #f7f2fa;
 }
 
+
+
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -142,14 +144,11 @@ body {
 }
 
 .content__hero--svg {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    z-index: -1;
     width: 50vw;
 }
 
 .content__hero--svg-svg {
-    /* overflow-x: hidden; */
-    /* overflow-y: hidden; */
     width: 80%;
     animation: rotate 20s alternate infinite;
 }
@@ -497,6 +496,10 @@ body {
     }
 
     @media (max-width: 520px) {
+        body {
+            overflow-x: hidden;
+        }
+
         .content__skills--section {
             font-size: 1rem;
         }
@@ -507,6 +510,7 @@ body {
 
         .content__hero--svg-svg {
             overflow-x: hidden;
+            overflow-y: hidden;
             position: absolute;
             top: 30%;
             right: 10%;
