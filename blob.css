@@ -1,9 +1,10 @@
 .random-blob {
     /* transform: scale(.2); */
-    width: 2.5%;
+    width: 2.5em;
     position: absolute;
-    animation: breathe 1.5s infinite alternate ease-in-out;
     z-index: -1;
+    transition: .5s;
+    /* animation: breathe 1.5s infinite alternate ease-in-out; */
 }
 
 .random-blob-1 {
@@ -215,5 +216,17 @@
     100% {
         transform: translateY(-10px) rotate(5deg);
 
+    }
+}
+
+
+@media(max-width: 550px){
+    .random-blob{
+        width: 1.7em;
+    }
+}
+@media(max-width: 400px){
+    .random-blob{
+        width: 1.5em;
     }
 }
