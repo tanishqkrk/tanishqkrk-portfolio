@@ -4,7 +4,7 @@
     position: absolute;
     z-index: -1;
     transition: .5s;
-    /* animation: breathe 1.5s infinite alternate ease-in-out; */
+    animation: breathe 1.5s infinite alternate ease-in-out;
 }
 
 .random-blob-1 {

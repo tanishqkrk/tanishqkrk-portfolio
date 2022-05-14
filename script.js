@@ -48,7 +48,3 @@ button.addEventListener('mousemove', e=>{
 button.addEventListener('mouseleave', e=>{
     document.querySelector('.textCursor').style.display = 'none';
 })
-
-window.addEventListener('mousemove',e=>{
-    document.querySelector('windowCursor');
-})
