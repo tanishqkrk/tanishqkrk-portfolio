@@ -258,12 +258,12 @@ body {
 }
 .work-github{
     font-size: 2em;
-    color: black;
+    color: var(--primary-color);
     transition: .3s;
 }
 .work-github:hover{
     text-shadow: 0px 0px 12px var(--primary-color);
-    color: white;
+    color: var(--background-color);
 }
 .content__work--work-container-image-img:hover {
     box-shadow: none;
