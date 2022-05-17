@@ -35,7 +35,7 @@ body {
     padding: 0;
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
-    cursor: url('./assests/mainCursor.png'),auto;
+    /* cursor: url('./assests/mainCursor.png'),auto; */
 }
 
 *{
@@ -122,6 +122,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: none;
 }
 
 .content__hero--title {
@@ -213,6 +214,7 @@ body {
     text-align: center;
 
 }
+
 .content__work--work{
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -235,7 +237,7 @@ body {
     justify-content: center;
     align-items: center;
     /* width: 50vw; */
-    margin: 2em 0;
+    margin-top: 2em ;
 }
 .content__work--work-container-image{
     display: flex;
@@ -254,7 +256,15 @@ body {
     /* position: relative; */
 
 }
-
+.work-github{
+    font-size: 2em;
+    color: black;
+    transition: .3s;
+}
+.work-github:hover{
+    text-shadow: 0px 0px 12px var(--primary-color);
+    color: white;
+}
 .content__work--work-container-image-img:hover {
     box-shadow: none;
     transform: scale(.95);
@@ -298,9 +308,12 @@ body {
 }
 
 .content__skills-skills {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items:center ;
+    align-content: center;
     width: 100%;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .content__skills--skill {
@@ -333,7 +346,7 @@ body {
     background-color: #EFD81D;
 }
 
-.content__skills--frameworks-bootstrap:hover {
+.content__skills--bootstrap:hover {
     background-color: #8011F5;
 }
 
@@ -347,6 +360,9 @@ body {
 
 .content__skills--github:hover {
     background-color: #000000;
+}
+.content__skills--laravel:hover {
+    background-color: #F7291C;
 }
 
 .skill-logo {
@@ -457,6 +473,16 @@ body {
     .content__work--work{
         display: flex;
         flex-direction: column;
+    }
+    .content__skills-skills{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 90%; */
+    }
+    .content__skills--skill{
+        width: 70vw;
     }
 }
 
