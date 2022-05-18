@@ -8,7 +8,7 @@ function changeTheme(e) {
 
 // Blob code
 
-let blob = document.querySelectorAll('.random-blob');
+const blob = document.querySelectorAll('.random-blob');
 
 let indexScroll = 0;
 window.addEventListener('scroll', e => {
