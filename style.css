@@ -13,14 +13,14 @@
 }
 
 .textCursor{
-    width: 100px;
-    height: 100px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
-    background-color: yellow;
-    position: absolute;
+    background-color: var(--primary-color);
+    position: fixed;
     z-index: -1;
-    opacity: .5;
-    display: none;
+    /* opacity: .5; */
+    /* display: none; */
 }
 
 html {
@@ -36,11 +36,12 @@ body {
     color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
     /* cursor: url('./assests/mainCursor.png'),auto; */
+    cursor: none;
 }
 
 *{
     /* margin: calc(auto + 20em); */
-    /* transition: .3s ; */
+    /* transition: .3s  ; */
 }
 
 .section {

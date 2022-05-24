@@ -1,5 +1,4 @@
 const themeSwitch = document.querySelector('#checkbox');
-// console.log(rootBg, rootFt);
 themeSwitch.addEventListener('click', changeTheme);
 
 function changeTheme(e) {
@@ -15,13 +14,10 @@ window.addEventListener('scroll', e => {
     if (document.body.getBoundingClientRect().top > indexScroll) {
         for (let i = 0; i < blob.length; i++) {
             blob[i].style.transform = 'translateY(30px) rotate(20deg)'
-            // blob[i].style.marginBottom = '100px';
         }
     } else {
         for (let i = 0; i < blob.length; i++) {
             blob[i].style.transform = 'translateY(-30px) rotate(-20deg)';
-            // blob[i].style.marginBottom = '-100px';
-            // blob[i].style.transform = 'scale(3)'
         }
     }
     indexScroll = (document.body.getBoundingClientRect()).top;
@@ -29,21 +25,26 @@ window.addEventListener('scroll', e => {
 
 // Hover Code
 
-let text = document.querySelector('.content__hero');
-let button = document.querySelector('.content__hero--title-button');
-text.addEventListener('mousemove', e => {
-    document.querySelector('.textCursor').style.display = 'block';
-    document.querySelector('.textCursor').style.top = `${e.clientY - 30}px`
-    document.querySelector('.textCursor').style.left = `${e.clientX - 30}px`
+let cursorArea = document.querySelector('html');
+let cursorSize = 10;
+cursorArea.addEventListener('mousemove', e => {
+    document.querySelector('.textCursor').style.top = `${e.clientY - cursorSize}px`
+    document.querySelector('.textCursor').style.left = `${e.clientX - cursorSize}px`
 })
-text.addEventListener('mouseleave', e => {
-    document.querySelector('.textCursor').style.display = 'none';
+
+let heroText = document.querySelector('.content__hero--title-text');
+heroText.addEventListener('mousemove', e => {
+    document.querySelector('.textCursor').style.width = '60px'
+    document.querySelector('.textCursor').style.height = '60px'
+    document.querySelector('.textCursor').style.border = '2px solid var(--primary-color)'
+    document.querySelector('.textCursor').style.background = 'transparent';
+    // document.querySelector('.textCursor').style.transition = '.5s';
+
 })
-button.addEventListener('mousemove', e => {
-    document.querySelector('.textCursor').style.display = 'block';
-    document.querySelector('.textCursor').style.top = `${e.clientY - 30}px`
-    document.querySelector('.textCursor').style.left = `${e.clientX - 30}px`
-})
-button.addEventListener('mouseleave', e => {
-    document.querySelector('.textCursor').style.display = 'none';
+heroText.addEventListener('mouseleave', e => {
+    document.querySelector('.textCursor').style.width = '20px'
+    document.querySelector('.textCursor').style.height = '20px'
+    document.querySelector('.textCursor').style.background = 'var(--primary-color)'
+    document.querySelector('.textCursor').style.border = 'none';
+    // document.querySelector('.textCursor').style.transition = 'none';
 })
